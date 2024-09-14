@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      const mycanvas = document.getElementById("mycanvas");
+
+      mycanvas.clientWidth = window.innerWidth;
+      mycanvas.clientHeight = window.innerHeight;
+
+      const c = mycanvas.getContext("2d");
+
+      c.fillRect(25, 25, 10, 10);
+    </script>
   </head>
   <body>
     <header>Basic Web Fundamental</header>
+
+    <canvas id="mycanvas"></canvas>
+    <div></div>
 
     <footer>@2024 Zanuar Bagus Ramadhan</footer>
   </body>
